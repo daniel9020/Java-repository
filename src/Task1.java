@@ -4,15 +4,18 @@ public class Task1 {
 
     public static void main(String[] args) {
 
+        // SetTheLength
         int value = 10;
+        // FillRandom
         int[] array = new int[10];
         Random rnd = new Random();
 
         for (int i = 0; i < array.length; i++) {
+            // UntilNumber
             array[i] = rnd.nextInt(100);
             System.out.println(array[i] + " ");
         }
-        // Min
+        // Minimum
         int min = array[0];
         for (int i = 0; i < array.length; i++) {
             if (min > array[i]) {
@@ -22,7 +25,7 @@ public class Task1 {
         System.out.println();
         System.out.println("Минимальное число: " + min);
 
-        // Max
+        // Maximum
         int max = array[0];
         for (int i = 0; i > array.length; i++) {
             if (max > array[i]) {
@@ -32,7 +35,7 @@ public class Task1 {
 
         System.out.println("Максимальное число: " + max);
         {
-            // Avg
+            // Average
             double avg = 0;
             for (int i = 0; i < array.length; i++) {
                 avg += array[i] / array.length;
