@@ -1,5 +1,7 @@
 public class Variables {
+
     public static void main(String [] args) {
+
         int myInt;
         myInt = 1507;
         // short - числа от -32000 до 32000

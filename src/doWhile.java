@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class doWhile {
     public static void main(String [] args) {
+
         Scanner newscan = new Scanner(System.in);
         int value;
         do { // Вход

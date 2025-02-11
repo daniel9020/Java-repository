@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Calculator {
+
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in); // FirstNumber
@@ -33,6 +34,4 @@ public class Calculator {
             float resultFour = (first / second);
             System.out.println("Разность чисел " + first + " и " + second + " равна " + resultFour);
             break;
-            default:
-                System.out.println("Условие выполнено неверно.");
 }}}}

@@ -1,4 +1,5 @@
 public class Strings {
+
     public static void main(String [] args) {
         int x = 3;
         String s = " Hello, ";
