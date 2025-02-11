@@ -13,21 +13,26 @@ public class Calculator {
         System.out.println("Введи операцию (+,-,*,/): "); // Operation
         char symbol = scanner.next().charAt(0);
 
-        if (symbol == '+') { // IfPlus
+        switch (symbol){
+        case '+': { // IfPlus
             float result = (first + second);
             System.out.println("Сумма чисел " + first + " и " + second + " равна " + result);
+            break;
             }
-        if (symbol == '-') { // IfMinus
+            case '-': {// IfMinus
             float resultTwo = (first - second);
             System.out.println("Разница чисел " + first + " и " + second + " равна " + resultTwo);
+            break;
         }
-        if (symbol == '*') { // IfMultiply
+            case '*': { // IfMultiply
             float resultThree = (first * second);
             System.out.println("Произведение чисел " + first + " и " + second + " равна " + resultThree);
+            break;
     }
-        if (symbol == '/') { // IfDivide
+        case '/': { // IfDivide
             float resultFour = (first / second);
             System.out.println("Разность чисел " + first + " и " + second + " равна " + resultFour);
-        }else { // Otherwise
-            System.out.println("Данная операция не поддерживается");
-}}}
+            break;
+            default:
+                System.out.println("Условие выполнено неверно.");
+}}}}
